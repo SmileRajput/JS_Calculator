@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Calculator</title>
+  <script async src="./script.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="calc_container">
+      <table class="calc">
+        <tr class="row">
+          <td colspan="5" class="calc_input">
+            <input type="text" name="calc_input" style="text-align: right" placeholder="0" />
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="deg" class="first_row">DEG</button>
+          </td>
+          <td>
+            <button id="fe" class="first_row">F-E</button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="mc" class="memory_function">MC</button>
+          </td>
+          <td>
+            <button id="mr" class="memory_function">MR</button>
+          </td>
+          <td>
+            <button id="m+" class="memory_function">M+</button>
+          </td>
+          <td>
+            <button id="m-" class="memory_function">M-</button>
+          </td>
+          <td>
+            <button id="ms" class="memory_function">MS</button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td colspan="2">
+            <select name="Trigonometry" id="trigonometry">
+              <option value="sin">∠ Trigonometry</option>
+              <option value="sin">sin</option>
+              <option value="cos">cos</option>
+              <option value="tan">tan</option>
+            </select>
+          </td>
+          <td colspan="3">
+            <select name="Function" id="function">
+              <option value="function">ƒ Function</option>
+              <option value="random">random</option>
+              <option value="floor">floor</option>
+              <option value="ceil">ceilling</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="2nd" onclick="changeOp()">2<sup>nd</sup></button>
+          </td>
+          <td>
+            <button id="pie">π</button>
+          </td>
+          <td>
+            <button id="e" class="operation">e</button>
+          </td>
+          <td>
+            <button id="clear"><b>C</b></button>
+          </td>
+          <td>
+            <button id="backspace" style="color: red;" >⌫</button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="square" class="operation">X<sup>2</sup></button>
+          </td>
+          <td>
+            <button id="inverse" class="operation">1/x</button>
+          </td>
+          <td>
+            <button id="mod" class="operation">|x|</button>
+          </td>
+          <td>
+            <button id="exp" class="operation">exp</button>
+          </td>
+          <td>
+            <button id="modulo">mod</button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="squareRoot" class="operation"><sup>2</sup>√x</button>
+          </td>
+          <td>
+            <button id="open_bracket">(</button>
+          </td>
+          <td>
+            <button id="close_bracket">)</button>
+          </td>
+          <td>
+            <button id="factorial" class="operation">n!</button>
+          </td>
+          <td>
+            <button id="devide" style="font-size: 15px"><b>÷</b></button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="power" class="operation">x<sup>y</sup></button>
+          </td>
+          <td>
+            <button id="seven"><b>7</b></button>
+          </td>
+          <td>
+            <button id="eight"><b>8</b></button>
+          </td>
+          <td>
+            <button id="nine"><b>9</b></button>
+          </td>
+          <td>
+            <button id="multiply" style="font-size: 15px">X</button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="10xp" class="operation">10<sup>x</sup></button>
+          </td>
+          <td>
+            <button id="four"><b>4</b></button>
+          </td>
+          <td>
+            <button id="five"><b>5</b></button>
+          </td>
+          <td>
+            <button id="six"><b>6</b></button>
+          </td>
+          <td>
+            <button id="-"style="font-size: 15px"><b>-</b></button>
+
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="log10" class="operation">log</button>
+          </td>
+          <td>
+            <button id="one"><b>1</b></button>
+          </td>
+          <td>
+            <button id="two"><b>2</b></button>
+          </td>
+          <td>
+            <button id="three"><b>3</b></button>
+          </td>
+          <td>
+            <button id="+"style="font-size: 15px" ><b>+</b></button>
+          </td>
+        </tr>
+        <tr class="row">
+          <td>
+            <button id="ln" class="operation">ln</button>
+          </td>
+          <td>
+            <button id="plus_minus" style="font-size: 15px" class="operation">
+              +/-
+            </button>
+          </td>
+          <td>
+            <button id="zero"><b>0</b></button>
+          </td>
+          <td>
+            <button id="dot" style="font-size: 15px">.</button>
+          </td>
+          <td>
+            <button id="equal" style="font-size: 15px">=</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>
